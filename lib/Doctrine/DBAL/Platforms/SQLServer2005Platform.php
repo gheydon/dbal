@@ -60,5 +60,13 @@ class SQLServer2005Platform extends SQLServerPlatform
     {
         return 'Doctrine\DBAL\Platforms\Keywords\SQLServer2005Keywords';
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getDateTimeFormatString()
+    {
+        return 'Y-m-d H:i:s.u';
+    }
 }
 
